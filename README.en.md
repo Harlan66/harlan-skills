@@ -1,8 +1,14 @@
 # harlan-skills
 
-Harlan's AI Agent Skills collection.
+[![GitHub stars](https://img.shields.io/github/stars/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/forks)
+[![GitHub issues](https://img.shields.io/github/issues/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/issues)
+[![Last commit](https://img.shields.io/github/last-commit/Harlan66/harlan-skills?style=for-the-badge)](https://github.com/Harlan66/harlan-skills/commits/main)
+[![License](https://img.shields.io/github/license/Harlan66/harlan-skills?style=for-the-badge)](LICENSE)
 
-[中文](README.md)
+[中文](README.md) | **English**
+
+Harlan's AI Agent Skills collection.
 
 This repository collects reusable skills from real workflows: content creation, publishing, research, writing, product analysis, and personal productivity. Think of each Skill as a compact operating guide for an AI agent.
 
@@ -19,12 +25,12 @@ These Skills are not limited to Codex. They are written in a general Agent Skill
 
 | Skill | Description | Status |
 | --- | --- | --- |
-| `harlan-app-interaction-map` | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Ready |
-| `harlan-goal-mode-planner` | Turns vague intentions into executable Goal Mode goals with stages, boundaries, and stop conditions. | Ready |
-| `harlan-gzh-pb` | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Ready |
-| `harlan-tencent-meeting-share-transcript` | Extracts transcript content from lawful Tencent Meeting recording share pages. | Ready |
-| `harlan-x-article-publisher` | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Ready |
-| `_template` | Starter template for creating a new Skill. | Template |
+| [`harlan-app-interaction-map`](skills/harlan-app-interaction-map) | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Ready |
+| [`harlan-goal-mode-planner`](skills/harlan-goal-mode-planner) | Turns vague intentions into executable Goal Mode goals with stages, boundaries, and stop conditions. | Ready |
+| [`harlan-gzh-pb`](skills/harlan-gzh-pb) | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Ready |
+| [`harlan-tencent-meeting-share-transcript`](skills/harlan-tencent-meeting-share-transcript) | Extracts transcript content from lawful Tencent Meeting recording share pages. | Ready |
+| [`harlan-x-article-publisher`](skills/harlan-x-article-publisher) | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Ready |
+| [`_template`](skills/_template) | Starter template for creating a new Skill. | Template |
 
 ## Quick Start
 
@@ -38,6 +44,12 @@ Enter the repository:
 
 ```bash
 cd harlan-skills
+```
+
+If your tool supports `skills add`, install a single Skill directly:
+
+```bash
+npx skills add Harlan66/harlan-skills/skills/harlan-goal-mode-planner
 ```
 
 Copy the Skill you need into the Skills directory used by your AI tool.

@@ -1,8 +1,14 @@
 # harlan-skills
 
-Harlan 的 AI Agent Skills 集合。
+[![GitHub stars](https://img.shields.io/github/stars/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/forks)
+[![GitHub issues](https://img.shields.io/github/issues/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/issues)
+[![Last commit](https://img.shields.io/github/last-commit/Harlan66/harlan-skills?style=for-the-badge)](https://github.com/Harlan66/harlan-skills/commits/main)
+[![License](https://img.shields.io/github/license/Harlan66/harlan-skills?style=for-the-badge)](LICENSE)
 
-[English](README.en.md)
+**中文** | [English](README.en.md)
+
+Harlan 的 AI Agent Skills 集合。
 
 这里收集我在真实工作中沉淀出来的可复用技能，适用于内容创作、资料整理、发布流程、研究写作和个人效率场景。你可以把它理解成一组“给 AI Agent 使用的工作说明书”：复制到支持 Skills 的工具中，就能让 AI 更稳定地完成某类任务。
 
@@ -19,12 +25,12 @@ Harlan 的 AI Agent Skills 集合。
 
 | Skill | 说明 | 状态 |
 | --- | --- | --- |
-| `harlan-app-interaction-map` | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
-| `harlan-goal-mode-planner` | 把模糊目标整理成适合 Goal Mode 长时间执行的清晰目标 | 可用 |
-| `harlan-gzh-pb` | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
-| `harlan-tencent-meeting-share-transcript` | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
-| `harlan-x-article-publisher` | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |
-| `_template` | 创建新 Skill 的起始模板 | 模板 |
+| [`harlan-app-interaction-map`](skills/harlan-app-interaction-map) | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
+| [`harlan-goal-mode-planner`](skills/harlan-goal-mode-planner) | 把模糊目标整理成适合 Goal Mode 长时间执行的清晰目标 | 可用 |
+| [`harlan-gzh-pb`](skills/harlan-gzh-pb) | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
+| [`harlan-tencent-meeting-share-transcript`](skills/harlan-tencent-meeting-share-transcript) | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
+| [`harlan-x-article-publisher`](skills/harlan-x-article-publisher) | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |
+| [`_template`](skills/_template) | 创建新 Skill 的起始模板 | 模板 |
 
 ## 快速开始
 
@@ -38,6 +44,12 @@ git clone https://github.com/Harlan66/harlan-skills.git
 
 ```bash
 cd harlan-skills
+```
+
+如果你的工具支持 `skills add`，可以直接安装单个 Skill：
+
+```bash
+npx skills add Harlan66/harlan-skills/skills/harlan-goal-mode-planner
 ```
 
 复制你需要的 Skill 到对应 AI 工具的 Skills 目录。
