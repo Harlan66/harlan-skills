@@ -1,4 +1,10 @@
+<div align="center">
+
 # harlan-skills
+
+**Harlan 的 AI Agent Skills 索引。**
+
+[English](README.en.md) | **简体中文**
 
 [![GitHub stars](https://img.shields.io/github/stars/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/forks)
@@ -6,9 +12,9 @@
 [![Last commit](https://img.shields.io/github/last-commit/Harlan66/harlan-skills?style=for-the-badge)](https://github.com/Harlan66/harlan-skills/commits/main)
 [![License](https://img.shields.io/github/license/Harlan66/harlan-skills?style=for-the-badge)](LICENSE)
 
-**中文** | [English](README.en.md)
+[当前 Skills](#当前包含的-skills) · [快速开始](#快速开始) · [如何使用](#如何使用某个-skill) · [创建 Skill](#创建你自己的-skill) · [Star 支持](#给这个仓库点-star)
 
-Harlan 的 AI Agent Skills 索引。
+</div>
 
 这里汇总我在真实工作中沉淀出来的可复用 Skills，适用于内容创作、资料整理、发布流程、研究写作和个人效率场景。你可以把它理解成一个 Skill 导航页：从这里找到对应 Skill，再跳转到独立仓库或当前仓库目录查看完整说明。
 
@@ -71,7 +77,7 @@ cp -R skills/harlan-app-interaction-map ~/.codex/skills/harlan-app-interaction-m
 ## 如何使用某个 Skill
 
 1. 在上方表格中选择一个 Skill。
-2. 如果它已经拆成独立仓库，进入独立仓库查看完整 README。
+2. 如果它已经拆成独立仓库，进入独立仓库查看完整使用说明。
 3. 如果它还在本仓库目录中，进入对应 `skills/` 子目录查看说明。
 4. 把整个 Skill 文件夹复制到你的 AI 工具中。
 5. 在对话中描述任务，AI 会在合适的时候读取对应 Skill。

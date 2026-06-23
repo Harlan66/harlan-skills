@@ -1,4 +1,10 @@
+<div align="center">
+
 # harlan-skills
+
+**Harlan's AI Agent Skills index.**
+
+**English** | [简体中文](README.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Harlan66/harlan-skills?style=for-the-badge&logo=github)](https://github.com/Harlan66/harlan-skills/forks)
@@ -6,9 +12,9 @@
 [![Last commit](https://img.shields.io/github/last-commit/Harlan66/harlan-skills?style=for-the-badge)](https://github.com/Harlan66/harlan-skills/commits/main)
 [![License](https://img.shields.io/github/license/Harlan66/harlan-skills?style=for-the-badge)](LICENSE)
 
-[中文](README.md) | **English**
+[Available Skills](#available-skills) · [Quick Start](#quick-start) · [How to Use](#how-to-use-a-skill) · [Create a Skill](#create-your-own-skill) · [Star](#star-this-repository)
 
-Harlan's AI Agent Skills index.
+</div>
 
 This repository indexes reusable Skills from real workflows: content creation, publishing, research, writing, product analysis, and personal productivity. Think of it as a navigation hub: find a Skill here, then open its standalone repository or local directory for the full documentation.
 
@@ -65,7 +71,7 @@ If your tool uses another directory, copy the whole Skill folder there. The key 
 ## How to Use a Skill
 
 1. Pick a Skill from the table above.
-2. If it has a standalone repository, open that repository for the full README.
+2. If it has a standalone repository, open that repository for the full usage guide.
 3. If it still lives in this repository, open its `skills/` subdirectory.
 4. Copy the full Skill folder into your AI tool's Skills directory.
 5. Ask your AI agent to perform a matching task.
