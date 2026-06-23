@@ -1,63 +1,88 @@
 # harlan-skills
 
-个人 Codex Skills 集合，用来整理、维护和分享可复用的工作流、经验规则和辅助工具。
+Reusable Codex skills by Harlan.
 
-## 这个仓库适合放什么
+This repository collects practical Codex Skills that I use in real work, especially for content production, publishing workflows, research, writing, and repeatable personal productivity tasks.
 
-- 可以反复使用的个人工作方法
-- 已经验证过的内容生产、整理、检查、发布流程
-- 面向特定场景的 Codex 使用规则
-- 可复用的模板、参考资料和小工具
+If you use Codex and want ready-made workflows instead of rewriting the same instructions every time, this repo is for you.
 
-不建议放一次性项目记录、聊天摘录、私人账号信息、未脱敏资料或只适合单个项目的临时规则。
+## What You Can Use This For
 
-## 目录结构
+- Reuse proven Codex workflows for specific tasks.
+- Learn how to structure your own Codex Skills.
+- Copy individual Skills into your own Codex setup.
+- Adapt the templates here to build a personal Skill library.
 
-```text
-harlan-skills/
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── skill-template.md
-│   └── release-checklist.md
-└── skills/
-    └── skill-name/
-        ├── README.md
-        ├── SKILL.md
-        ├── agents/
-        ├── references/
-        ├── scripts/
-        └── assets/
+## Available Skills
+
+| Skill | What it does | Status |
+| --- | --- | --- |
+| `_template` | Starter template for creating a new Skill | Template |
+
+More Skills will be added over time.
+
+## How to Use
+
+Clone this repository:
+
+```bash
+git clone https://github.com/Harlan66/harlan-skills.git
 ```
 
-## Skill 列表
+Then copy the Skill you want into your local Codex Skills directory.
 
-| Skill | 用途 | 状态 |
-| --- | --- | --- |
-| `_template` | 新 Skill 的复制模板 | 模板 |
+Example:
 
-## 单个 Skill 的文档分工
+```bash
+cp -R harlan-skills/skills/_template ~/.codex/skills/my-new-skill
+```
 
-- `README.md`：给人看的说明，包括用途、安装、示例和维护说明。
-- `SKILL.md`：给 Codex 看的核心规则，只保留真正影响执行的内容。
-- `references/`：较长的参考材料、风格规范、案例说明。
-- `scripts/`：可重复使用的小工具。
-- `assets/`：模板、图片、示例文件等素材。
-- `agents/openai.yaml`：Skill 在界面中展示时使用的简短信息。
+After copying, rename the folder and update the Skill files for your own use.
 
-## 新增一个 Skill
+## Skill Structure
 
-1. 复制 `skills/_template/`。
-2. 把目录名改成小写英文、数字和连字符组成的名字。
-3. 填写该 Skill 的 `README.md`。
-4. 编写精简的 `SKILL.md`。
-5. 按需补充 `references/`、`scripts/` 和 `assets/`。
-6. 按 `docs/release-checklist.md` 检查后再发布。
+Each Skill follows this general layout:
 
-## 维护原则
+```text
+skill-name/
+├── README.md
+├── SKILL.md
+├── agents/
+├── references/
+├── scripts/
+└── assets/
+```
 
-- 一个 Skill 只解决一类明确问题。
-- 说明文档面向人，执行规则面向 Codex。
-- 复杂说明放到 `references/`，不要塞进 `SKILL.md`。
-- 发布前删除私人信息、账号信息、临时路径和未授权内容。
-- 每次调整后，用真实场景检查一次是否还能按预期工作。
+The important parts are:
+
+- `README.md`: explains the Skill for people browsing GitHub.
+- `SKILL.md`: contains the instructions Codex reads when the Skill is used.
+- `references/`: stores longer guides, examples, or style rules.
+- `scripts/`: stores helper scripts when a workflow needs repeatable actions.
+- `assets/`: stores templates, images, or other supporting files.
+
+## Create Your Own Skill
+
+Use `skills/_template` as a starting point:
+
+1. Copy the template folder.
+2. Rename it with a short, clear Skill name.
+3. Update `README.md` so users understand what the Skill does.
+4. Update `SKILL.md` with the actual Codex instructions.
+5. Add supporting files only when they are useful.
+
+You can also read:
+
+- `docs/skill-template.md`
+- `docs/release-checklist.md`
+- `docs/repository-guide.md`
+
+## Star This Repo
+
+If this repository helps you build better Codex workflows, please consider giving it a Star.
+
+Stars help more people discover the project, and they also help me decide which Skills and templates are worth improving next.
+
+## License
+
+MIT License.
