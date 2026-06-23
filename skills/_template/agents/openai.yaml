@@ -1,0 +1,3 @@
+display_name: Skill Name
+short_description: A concise description of what this skill helps with.
+default_prompt: Use this skill to help me with a repeatable workflow.
