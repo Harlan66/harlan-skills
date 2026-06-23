@@ -2,6 +2,8 @@
 
 Harlan 的 AI Agent Skills 集合。
 
+[English](README.en.md)
+
 这里收集我在真实工作中沉淀出来的可复用技能，适用于内容创作、资料整理、发布流程、研究写作和个人效率场景。你可以把它理解成一组“给 AI Agent 使用的工作说明书”：复制到支持 Skills 的工具中，就能让 AI 更稳定地完成某类任务。
 
 这些 Skills 不只面向 Codex，也尽量采用通用的 Agent Skills 结构，方便迁移到 Claude Code、Cursor、GitHub Copilot、Gemini CLI、Windsurf 等支持类似机制的 AI 工具中。
@@ -17,9 +19,11 @@ Harlan 的 AI Agent Skills 集合。
 
 | Skill | 说明 | 状态 |
 | --- | --- | --- |
+| `app-interaction-map` | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
+| `gzh-pb` | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
+| `tencent-meeting-share-transcript` | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
+| `x-article-publisher` | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |
 | `_template` | 创建新 Skill 的起始模板 | 模板 |
-
-后续会逐步加入更多真实使用中的 Skills。
 
 ## 快速开始
 
@@ -41,6 +45,12 @@ cd harlan-skills
 
 ```bash
 cp -R skills/_template ~/.codex/skills/my-new-skill
+```
+
+如果要安装一个已经整理好的 Skill，可以直接复制对应目录：
+
+```bash
+cp -R skills/app-interaction-map ~/.codex/skills/app-interaction-map
 ```
 
 如果你使用的是其他 AI 工具，请把 Skill 文件夹复制到该工具指定的 Skills 目录中。不同工具的目录名称可能不同，但核心结构通常是一个包含 `SKILL.md` 的文件夹。
