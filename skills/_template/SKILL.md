@@ -1,9 +1,9 @@
 ---
-name: skill-name
+name: harlan-skill-name
 description: Use when the user needs a specific repeatable workflow or domain-specific guidance.
 ---
 
-# Skill Name
+# Harlan Skill Name
 
 ## When to Use
 

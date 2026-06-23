@@ -19,10 +19,10 @@ Harlan 的 AI Agent Skills 集合。
 
 | Skill | 说明 | 状态 |
 | --- | --- | --- |
-| `app-interaction-map` | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
-| `gzh-pb` | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
-| `tencent-meeting-share-transcript` | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
-| `x-article-publisher` | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |
+| `harlan-app-interaction-map` | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
+| `harlan-gzh-pb` | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
+| `harlan-tencent-meeting-share-transcript` | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
+| `harlan-x-article-publisher` | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |
 | `_template` | 创建新 Skill 的起始模板 | 模板 |
 
 ## 快速开始
@@ -44,13 +44,13 @@ cd harlan-skills
 以 Codex 为例：
 
 ```bash
-cp -R skills/_template ~/.codex/skills/my-new-skill
+cp -R skills/_template ~/.codex/skills/harlan-my-new-skill
 ```
 
 如果要安装一个已经整理好的 Skill，可以直接复制对应目录：
 
 ```bash
-cp -R skills/app-interaction-map ~/.codex/skills/app-interaction-map
+cp -R skills/harlan-app-interaction-map ~/.codex/skills/harlan-app-interaction-map
 ```
 
 如果你使用的是其他 AI 工具，请把 Skill 文件夹复制到该工具指定的 Skills 目录中。不同工具的目录名称可能不同，但核心结构通常是一个包含 `SKILL.md` 的文件夹。
@@ -67,7 +67,7 @@ cp -R skills/app-interaction-map ~/.codex/skills/app-interaction-map
 ## Skill 的基本结构
 
 ```text
-skill-name/
+harlan-skill-name/
 ├── README.md
 ├── SKILL.md
 ├── agents/
@@ -90,7 +90,7 @@ skill-name/
 你可以从模板开始：
 
 ```bash
-cp -R skills/_template skills/my-skill
+cp -R skills/_template skills/harlan-my-skill
 ```
 
 然后依次修改：

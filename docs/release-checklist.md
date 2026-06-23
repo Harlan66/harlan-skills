@@ -5,6 +5,7 @@
 ## 基础信息
 
 - [ ] 目录名使用小写英文、数字和连字符。
+- [ ] 目录名和 `SKILL.md` 里的 `name` 都以 `harlan-` 开头。
 - [ ] `README.md` 已说明用途、适用场景、安装方式和示例。
 - [ ] `SKILL.md` 包含 `name` 和 `description`。
 - [ ] `description` 说明“什么时候使用”，而不是罗列执行步骤。

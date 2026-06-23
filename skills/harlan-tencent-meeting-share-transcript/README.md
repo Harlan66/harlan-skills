@@ -1,4 +1,4 @@
-# tencent-meeting-share-transcript
+# harlan-tencent-meeting-share-transcript
 
 从合法可访问的腾讯会议录制分享页中提取逐字稿或会议纪要。
 
@@ -18,12 +18,12 @@
 
 ## 使用方式
 
-把整个 `tencent-meeting-share-transcript` 文件夹复制到你的 AI 工具 Skills 目录中，然后提供分享链接和访问密码。
+把整个 `harlan-tencent-meeting-share-transcript` 文件夹复制到你的 AI 工具 Skills 目录中，然后提供分享链接和访问密码。
 
 示例：
 
 ```text
-请使用 tencent-meeting-share-transcript，帮我导出这个腾讯会议分享页里的逐字稿。
+请使用 harlan-tencent-meeting-share-transcript，帮我导出这个腾讯会议分享页里的逐字稿。
 ```
 
 ## 目录说明

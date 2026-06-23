@@ -1,5 +1,5 @@
 ---
-name: app-interaction-map
+name: harlan-app-interaction-map
 description: Use when turning App screenshots, screen recordings, reverse-engineered page lists, routes, APIs, or navigation notes into a reliable interaction map for product, design, QA, or Figma handoff.
 ---
 

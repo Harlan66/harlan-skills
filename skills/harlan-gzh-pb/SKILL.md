@@ -1,5 +1,5 @@
 ---
-name: gzh-pb
+name: harlan-gzh-pb
 description: Use when preparing Chinese WeChat public account articles with WeMD, fixed Markdown-to-WeChat formatting, deep-blue visual themes, image planning/generation, cover and inline illustration consistency, and project-local workflow constraints.
 ---
 

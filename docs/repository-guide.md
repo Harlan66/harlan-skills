@@ -23,6 +23,7 @@ Avoid adding one-off project notes, raw chat logs, private account details, secr
 ## Maintenance principles
 
 - Keep each Skill focused on one clear use case.
+- Name every public Skill with the `harlan-` prefix.
 - Keep `SKILL.md` concise.
 - Put detailed background in `references/`.
 - Remove private information before publishing.

@@ -19,10 +19,10 @@ These Skills are not limited to Codex. They are written in a general Agent Skill
 
 | Skill | Description | Status |
 | --- | --- | --- |
-| `app-interaction-map` | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Ready |
-| `gzh-pb` | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Ready |
-| `tencent-meeting-share-transcript` | Extracts transcript content from lawful Tencent Meeting recording share pages. | Ready |
-| `x-article-publisher` | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Ready |
+| `harlan-app-interaction-map` | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Ready |
+| `harlan-gzh-pb` | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Ready |
+| `harlan-tencent-meeting-share-transcript` | Extracts transcript content from lawful Tencent Meeting recording share pages. | Ready |
+| `harlan-x-article-publisher` | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Ready |
 | `_template` | Starter template for creating a new Skill. | Template |
 
 ## Quick Start
@@ -44,7 +44,7 @@ Copy the Skill you need into the Skills directory used by your AI tool.
 Codex example:
 
 ```bash
-cp -R skills/app-interaction-map ~/.codex/skills/app-interaction-map
+cp -R skills/harlan-app-interaction-map ~/.codex/skills/harlan-app-interaction-map
 ```
 
 If your tool uses another directory, copy the whole Skill folder there. The key structure is a folder that contains `SKILL.md`.
@@ -61,7 +61,7 @@ If your tool does not support automatic Skill loading, open the Skill's `SKILL.m
 ## Skill Structure
 
 ```text
-skill-name/
+harlan-skill-name/
 ├── README.md
 ├── SKILL.md
 ├── agents/
@@ -82,7 +82,7 @@ skill-name/
 Start from the template:
 
 ```bash
-cp -R skills/_template skills/my-skill
+cp -R skills/_template skills/harlan-my-skill
 ```
 
 Then update:

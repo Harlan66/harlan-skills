@@ -1,4 +1,0 @@
-interface:
-  display_name: "Tencent Meeting Share Transcript"
-  short_description: "Extract transcripts from Tencent Meeting share links"
-  default_prompt: "Use $tencent-meeting-share-transcript to extract transcript content from a Tencent Meeting share link and access password."

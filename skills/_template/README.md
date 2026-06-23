@@ -1,4 +1,4 @@
-# skill-name
+# harlan-skill-name
 
 一句话说明这个 Skill 解决什么问题。
 
@@ -26,7 +26,7 @@
 ## 目录说明
 
 ```text
-skill-name/
+harlan-skill-name/
 ├── README.md
 ├── SKILL.md
 ├── agents/

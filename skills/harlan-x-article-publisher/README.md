@@ -1,4 +1,4 @@
-# x-article-publisher
+# harlan-x-article-publisher
 
 把 Markdown 文章整理并发布到 X Articles 草稿编辑器。
 
@@ -20,12 +20,12 @@
 
 ## 使用方式
 
-把整个 `x-article-publisher` 文件夹复制到你的 AI 工具 Skills 目录中，然后提供 Markdown 文件路径或文章内容。
+把整个 `harlan-x-article-publisher` 文件夹复制到你的 AI 工具 Skills 目录中，然后提供 Markdown 文件路径或文章内容。
 
 示例：
 
 ```text
-请使用 x-article-publisher，把这篇 Markdown 文章整理到 X Articles 草稿里。
+请使用 harlan-x-article-publisher，把这篇 Markdown 文章整理到 X Articles 草稿里。
 ```
 
 ## 目录说明

@@ -1,5 +1,5 @@
 ---
-name: tencent-meeting-share-transcript
+name: harlan-tencent-meeting-share-transcript
 description: Use when the user wants to extract or batch export transcript content from Tencent Meeting share links that provide an access password, especially cross-org share pages where the recording page already shows a transcript or minutes view. This skill is for lawful access to shared recording pages, transcript export, transcript pagination, and checking whether media files are actually downloadable.
 ---
 

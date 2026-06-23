@@ -1,4 +1,4 @@
-# app-interaction-map
+# harlan-app-interaction-map
 
 把 App 截图、录屏帧、页面列表、路由信息和接口线索整理成可靠的交互地图。
 
@@ -19,12 +19,12 @@
 
 ## 使用方式
 
-把整个 `app-interaction-map` 文件夹复制到你的 AI 工具 Skills 目录中，然后在任务中提供截图、录屏帧、页面列表或相关说明。
+把整个 `harlan-app-interaction-map` 文件夹复制到你的 AI 工具 Skills 目录中，然后在任务中提供截图、录屏帧、页面列表或相关说明。
 
 示例：
 
 ```text
-请使用 app-interaction-map，把这些 App 截图整理成一份交互地图。
+请使用 harlan-app-interaction-map，把这些 App 截图整理成一份交互地图。
 ```
 
 ## 目录说明

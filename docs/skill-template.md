@@ -3,7 +3,7 @@
 复制下面内容到每个 Skill 的 `README.md`，再按实际情况删改。
 
 ````markdown
-# skill-name
+# harlan-skill-name
 
 一句话说明这个 Skill 解决什么问题。
 
@@ -31,7 +31,7 @@
 ## 目录说明
 
 ```text
-skill-name/
+harlan-skill-name/
 ├── README.md
 ├── SKILL.md
 ├── agents/
@@ -56,11 +56,11 @@ skill-name/
 
 ````markdown
 ---
-name: skill-name
+name: harlan-skill-name
 description: Use when the user needs [specific trigger or situation].
 ---
 
-# Skill Name
+# Harlan Skill Name
 
 ## When to Use
 
