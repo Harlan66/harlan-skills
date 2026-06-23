@@ -1,47 +1,60 @@
 # harlan-skills
 
-Reusable Codex skills by Harlan.
+Harlan 的 AI Agent Skills 集合。
 
-This repository collects practical Codex Skills that I use in real work, especially for content production, publishing workflows, research, writing, and repeatable personal productivity tasks.
+这里收集我在真实工作中沉淀出来的可复用技能，适用于内容创作、资料整理、发布流程、研究写作和个人效率场景。你可以把它理解成一组“给 AI Agent 使用的工作说明书”：复制到支持 Skills 的工具中，就能让 AI 更稳定地完成某类任务。
 
-If you use Codex and want ready-made workflows instead of rewriting the same instructions every time, this repo is for you.
+这些 Skills 不只面向 Codex，也尽量采用通用的 Agent Skills 结构，方便迁移到 Claude Code、Cursor、GitHub Copilot、Gemini CLI、Windsurf 等支持类似机制的 AI 工具中。
 
-## What You Can Use This For
+## 这个仓库能帮你做什么
 
-- Reuse proven Codex workflows for specific tasks.
-- Learn how to structure your own Codex Skills.
-- Copy individual Skills into your own Codex setup.
-- Adapt the templates here to build a personal Skill library.
+- 直接复用我整理好的 AI Agent 工作流。
+- 学习如何组织一个清晰、可维护的 Skills 仓库。
+- 基于模板创建自己的个人技能库。
+- 把常用提示词、流程、规范和辅助文件沉淀成可长期维护的资产。
 
-## Available Skills
+## 当前包含的 Skills
 
-| Skill | What it does | Status |
+| Skill | 说明 | 状态 |
 | --- | --- | --- |
-| `_template` | Starter template for creating a new Skill | Template |
+| `_template` | 创建新 Skill 的起始模板 | 模板 |
 
-More Skills will be added over time.
+后续会逐步加入更多真实使用中的 Skills。
 
-## How to Use
+## 快速开始
 
-Clone this repository:
+克隆仓库：
 
 ```bash
 git clone https://github.com/Harlan66/harlan-skills.git
 ```
 
-Then copy the Skill you want into your local Codex Skills directory.
-
-Example:
+进入仓库：
 
 ```bash
-cp -R harlan-skills/skills/_template ~/.codex/skills/my-new-skill
+cd harlan-skills
 ```
 
-After copying, rename the folder and update the Skill files for your own use.
+复制你需要的 Skill 到对应 AI 工具的 Skills 目录。
 
-## Skill Structure
+以 Codex 为例：
 
-Each Skill follows this general layout:
+```bash
+cp -R skills/_template ~/.codex/skills/my-new-skill
+```
+
+如果你使用的是其他 AI 工具，请把 Skill 文件夹复制到该工具指定的 Skills 目录中。不同工具的目录名称可能不同，但核心结构通常是一个包含 `SKILL.md` 的文件夹。
+
+## 如何使用某个 Skill
+
+1. 在 `skills/` 目录中选择一个 Skill。
+2. 阅读该 Skill 的 `README.md`，确认它适合你的任务。
+3. 把整个 Skill 文件夹复制到你的 AI 工具中。
+4. 在对话中描述任务，AI 会在合适的时候读取对应 Skill。
+
+如果你的工具不支持自动加载 Skills，也可以手动打开该 Skill 的 `SKILL.md`，把其中的规则交给 AI 使用。
+
+## Skill 的基本结构
 
 ```text
 skill-name/
@@ -53,36 +66,50 @@ skill-name/
 └── assets/
 ```
 
-The important parts are:
+常见文件说明：
 
-- `README.md`: explains the Skill for people browsing GitHub.
-- `SKILL.md`: contains the instructions Codex reads when the Skill is used.
-- `references/`: stores longer guides, examples, or style rules.
-- `scripts/`: stores helper scripts when a workflow needs repeatable actions.
-- `assets/`: stores templates, images, or other supporting files.
+- `README.md`：给使用者看的介绍，说明这个 Skill 能做什么、怎么用。
+- `SKILL.md`：给 AI Agent 看的核心规则。
+- `references/`：较长的参考资料、案例、风格规范。
+- `scripts/`：可重复运行的辅助脚本。
+- `assets/`：模板、图片、示例文件等素材。
+- `agents/`：面向部分工具的展示信息。
 
-## Create Your Own Skill
+## 创建你自己的 Skill
 
-Use `skills/_template` as a starting point:
+你可以从模板开始：
 
-1. Copy the template folder.
-2. Rename it with a short, clear Skill name.
-3. Update `README.md` so users understand what the Skill does.
-4. Update `SKILL.md` with the actual Codex instructions.
-5. Add supporting files only when they are useful.
+```bash
+cp -R skills/_template skills/my-skill
+```
 
-You can also read:
+然后依次修改：
+
+1. `README.md`：写给使用者，说明用途、安装和示例。
+2. `SKILL.md`：写给 AI Agent，保留最核心的执行规则。
+3. `references/`：放长说明、案例和规范。
+4. `scripts/`：放可重复使用的小工具。
+5. `assets/`：放模板和素材。
+
+发布前可以参考：
 
 - `docs/skill-template.md`
 - `docs/release-checklist.md`
 - `docs/repository-guide.md`
 
-## Star This Repo
+## 适合谁
 
-If this repository helps you build better Codex workflows, please consider giving it a Star.
+- 经常使用 AI Agent 处理重复任务的人。
+- 想把提示词升级成可维护工作流的人。
+- 想整理个人知识、创作流程、发布流程的人。
+- 想学习 Agent Skills 仓库结构的人。
 
-Stars help more people discover the project, and they also help me decide which Skills and templates are worth improving next.
+## 给这个仓库点 Star
 
-## License
+如果这个仓库对你有帮助，欢迎点一个 Star。
 
-MIT License.
+你的 Star 会帮助更多人发现这个项目，也会让我知道哪些 Skills 和模板值得继续完善。
+
+## 许可证
+
+MIT License。
