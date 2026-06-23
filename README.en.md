@@ -16,7 +16,7 @@
 
 </div>
 
-This repository indexes reusable Skills from real workflows: content creation, publishing, research, writing, product analysis, and personal productivity. Think of it as a navigation hub: find a Skill here, then open its standalone repository or local directory for the full documentation.
+This repository indexes reusable Skills from real workflows: content creation, publishing, research, writing, product analysis, and personal productivity. Think of it as a navigation hub: find a Skill here, then open its standalone repository for the full usage guide and installation path.
 
 These Skills are not limited to Codex. They are written in a general Agent Skills structure so they can be adapted to tools such as Claude Code, Cursor, GitHub Copilot, Gemini CLI, Windsurf, and other AI agent environments with similar mechanisms.
 
@@ -31,11 +31,11 @@ These Skills are not limited to Codex. They are written in a general Agent Skill
 
 | Skill | Description | Status |
 | --- | --- | --- |
-| [`harlan-app-interaction-map`](skills/harlan-app-interaction-map) | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Ready |
+| [`harlan-app-interaction-map`](https://github.com/Harlan66/harlan-app-interaction-map) | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Standalone repo |
 | [`harlan-goal-mode-planner`](https://github.com/Harlan66/harlan-goal-mode-planner) | Turns vague intentions into executable Goal Mode goals with stages, boundaries, and stop conditions. | Standalone repo |
-| [`harlan-gzh-pb`](skills/harlan-gzh-pb) | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Ready |
-| [`harlan-tencent-meeting-share-transcript`](skills/harlan-tencent-meeting-share-transcript) | Extracts transcript content from lawful Tencent Meeting recording share pages. | Ready |
-| [`harlan-x-article-publisher`](skills/harlan-x-article-publisher) | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Ready |
+| [`harlan-gzh-pb`](https://github.com/Harlan66/harlan-gzh-pb) | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Standalone repo |
+| [`harlan-tencent-meeting-share-transcript`](https://github.com/Harlan66/harlan-tencent-meeting-share-transcript) | Extracts transcript content from lawful Tencent Meeting recording share pages. | Standalone repo |
+| [`harlan-x-article-publisher`](https://github.com/Harlan66/harlan-x-article-publisher) | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Standalone repo |
 | [`_template`](skills/_template) | Starter template for creating a new Skill. | Template |
 
 ## Quick Start
@@ -58,23 +58,23 @@ If your tool supports `skills add`, install a single Skill directly:
 npx skills add Harlan66/harlan-goal-mode-planner
 ```
 
-You can also copy the Skill you need into the Skills directory used by your AI tool.
-
-Codex example:
+You can also install other standalone Skills:
 
 ```bash
-cp -R skills/harlan-app-interaction-map ~/.codex/skills/harlan-app-interaction-map
+npx skills add Harlan66/harlan-app-interaction-map
+npx skills add Harlan66/harlan-gzh-pb
+npx skills add Harlan66/harlan-tencent-meeting-share-transcript
+npx skills add Harlan66/harlan-x-article-publisher
 ```
 
-If your tool uses another directory, copy the whole Skill folder there. The key structure is a folder that contains `SKILL.md`.
+If your tool does not support `skills add`, open the target standalone repository and follow its manual installation steps.
 
 ## How to Use a Skill
 
 1. Pick a Skill from the table above.
-2. If it has a standalone repository, open that repository for the full usage guide.
-3. If it still lives in this repository, open its `skills/` subdirectory.
-4. Copy the full Skill folder into your AI tool's Skills directory.
-5. Ask your AI agent to perform a matching task.
+2. Open its standalone repository for the full usage guide.
+3. Install the Skill by following that repository's README.
+4. Ask your AI agent to perform a matching task.
 
 If your tool does not support automatic Skill loading, open the Skill's `SKILL.md` manually and provide the instructions to your AI agent.
 

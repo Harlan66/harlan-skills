@@ -16,7 +16,7 @@
 
 </div>
 
-这里汇总我在真实工作中沉淀出来的可复用 Skills，适用于内容创作、资料整理、发布流程、研究写作和个人效率场景。你可以把它理解成一个 Skill 导航页：从这里找到对应 Skill，再跳转到独立仓库或当前仓库目录查看完整说明。
+这里汇总我在真实工作中沉淀出来的可复用 Skills，适用于内容创作、资料整理、发布流程、研究写作和个人效率场景。你可以把它理解成一个 Skill 导航页：从这里找到对应 Skill，再跳转到独立仓库查看完整说明和安装方式。
 
 这些 Skills 不只面向 Codex，也尽量采用通用的 Agent Skills 结构，方便迁移到 Claude Code、Cursor、GitHub Copilot、Gemini CLI、Windsurf 等支持类似机制的 AI 工具中。
 
@@ -31,11 +31,11 @@
 
 | Skill | 说明 | 状态 |
 | --- | --- | --- |
-| [`harlan-app-interaction-map`](skills/harlan-app-interaction-map) | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
+| [`harlan-app-interaction-map`](https://github.com/Harlan66/harlan-app-interaction-map) | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 独立仓库 |
 | [`harlan-goal-mode-planner`](https://github.com/Harlan66/harlan-goal-mode-planner) | 把模糊目标整理成适合 Goal Mode 长时间执行的清晰目标 | 独立仓库 |
-| [`harlan-gzh-pb`](skills/harlan-gzh-pb) | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
-| [`harlan-tencent-meeting-share-transcript`](skills/harlan-tencent-meeting-share-transcript) | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
-| [`harlan-x-article-publisher`](skills/harlan-x-article-publisher) | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |
+| [`harlan-gzh-pb`](https://github.com/Harlan66/harlan-gzh-pb) | 中文微信公众号文章排版、配图规划和发布前检查 | 独立仓库 |
+| [`harlan-tencent-meeting-share-transcript`](https://github.com/Harlan66/harlan-tencent-meeting-share-transcript) | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 独立仓库 |
+| [`harlan-x-article-publisher`](https://github.com/Harlan66/harlan-x-article-publisher) | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 独立仓库 |
 | [`_template`](skills/_template) | 创建新 Skill 的起始模板 | 模板 |
 
 ## 快速开始
@@ -58,29 +58,23 @@ cd harlan-skills
 npx skills add Harlan66/harlan-goal-mode-planner
 ```
 
-也可以复制你需要的 Skill 到对应 AI 工具的 Skills 目录。
-
-以 Codex 为例：
+也可以安装其他独立 Skill：
 
 ```bash
-cp -R skills/_template ~/.codex/skills/harlan-my-new-skill
+npx skills add Harlan66/harlan-app-interaction-map
+npx skills add Harlan66/harlan-gzh-pb
+npx skills add Harlan66/harlan-tencent-meeting-share-transcript
+npx skills add Harlan66/harlan-x-article-publisher
 ```
 
-如果要安装一个已经整理好的 Skill，可以直接复制对应目录：
-
-```bash
-cp -R skills/harlan-app-interaction-map ~/.codex/skills/harlan-app-interaction-map
-```
-
-如果你使用的是其他 AI 工具，请把 Skill 文件夹复制到该工具指定的 Skills 目录中。不同工具的目录名称可能不同，但核心结构通常是一个包含 `SKILL.md` 的文件夹。
+如果你的工具不支持 `skills add`，进入对应独立仓库，按该仓库 README 中的手动安装方式复制 Skill 文件夹。
 
 ## 如何使用某个 Skill
 
 1. 在上方表格中选择一个 Skill。
-2. 如果它已经拆成独立仓库，进入独立仓库查看完整使用说明。
-3. 如果它还在本仓库目录中，进入对应 `skills/` 子目录查看说明。
-4. 把整个 Skill 文件夹复制到你的 AI 工具中。
-5. 在对话中描述任务，AI 会在合适的时候读取对应 Skill。
+2. 进入独立仓库查看完整使用说明。
+3. 按该仓库 README 安装 Skill。
+4. 在对话中描述任务，AI 会在合适的时候读取对应 Skill。
 
 如果你的工具不支持自动加载 Skills，也可以手动打开该 Skill 的 `SKILL.md`，把其中的规则交给 AI 使用。
 
