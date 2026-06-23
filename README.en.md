@@ -20,6 +20,7 @@ These Skills are not limited to Codex. They are written in a general Agent Skill
 | Skill | Description | Status |
 | --- | --- | --- |
 | `harlan-app-interaction-map` | Turns screenshots, recordings, routes, and notes into a structured interaction map. | Ready |
+| `harlan-goal-mode-planner` | Turns vague intentions into executable Goal Mode goals with stages, boundaries, and stop conditions. | Ready |
 | `harlan-gzh-pb` | Prepares Chinese WeChat public account articles with fixed layout, visual style, and image planning rules. | Ready |
 | `harlan-tencent-meeting-share-transcript` | Extracts transcript content from lawful Tencent Meeting recording share pages. | Ready |
 | `harlan-x-article-publisher` | Publishes Markdown articles to X Articles drafts with formatting and media handling guidance. | Ready |

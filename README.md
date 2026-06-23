@@ -20,6 +20,7 @@ Harlan 的 AI Agent Skills 集合。
 | Skill | 说明 | 状态 |
 | --- | --- | --- |
 | `harlan-app-interaction-map` | 把截图、录屏、页面列表和路由线索整理成结构化交互地图 | 可用 |
+| `harlan-goal-mode-planner` | 把模糊目标整理成适合 Goal Mode 长时间执行的清晰目标 | 可用 |
 | `harlan-gzh-pb` | 中文微信公众号文章排版、配图规划和发布前检查 | 可用 |
 | `harlan-tencent-meeting-share-transcript` | 从合法可访问的腾讯会议录制分享页中提取逐字稿 | 可用 |
 | `harlan-x-article-publisher` | 把 Markdown 文章整理到 X Articles 草稿编辑器 | 可用 |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Mode Planner"
+  short_description: "Diagnose or create executable Goal Mode goals."
+  default_prompt: "帮我把这个目标整理成适合 Goal 模式执行的 Goal。"
